@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume and portfolio of Nanzib Chowdhury, Computer Science student and aspiring software engineer.">
+  <title>Nanzib Chowdhury | Software Engineering Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header id="site-header">
+    <div class="header-container">
+      <img src="assets/profile.png" alt="Portrait of Nanzib Chowdhury" class="profile-image">
+      <div class="header-text">
+        <h1 id="candidate-name">Nanzib Chowdhury</h1>
+        <p class="tagline">CS Student at Hunter College | Aspiring Software Engineer | Former AWS Apprentice</p>
+        <p class="contact-links">
+          Queens, NY &bull; 
+          <a href="mailto:nanzibc@gmail.com">nanzibc@gmail.com</a> &bull; 
+          <a href="https://github.com/Nanzib" target="_blank" rel="noopener noreferrer">GitHub</a> &bull; 
+          <a href="https://linkedin.com/in/nanzib" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Technical Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- About Section -->
+    <section id="about" class="resume-section">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student at Hunter College dedicated to building scalable full-stack applications, 
+        cloud infrastructure, and distributed backend systems. With practical experience spanning enterprise cloud 
+        tooling at Amazon Web Services (AWS) and responsive web development, I aim to combine technical rigor with 
+        clear, purposeful system design.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="resume-section">
+      <h2>Technical Competencies</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Domain</th>
+              <th scope="col">Technologies &amp; Frameworks</th>
+              <th scope="col">Primary Environment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Languages</td>
+              <td>TypeScript, JavaScript (ES6+), Python, C++, SQL</td>
+              <td>Node.js, Linux, GCC</td>
+            </tr>
+            <tr>
+              <td>Backend &amp; Data</td>
+              <td>Express.js, PostgreSQL, REST APIs, WebSockets (Socket.IO)</td>
+              <td>Node.js Runtime, Neon / Supabase</td>
+            </tr>
+            <tr>
+              <td>Cloud &amp; DevOps</td>
+              <td>AWS (EC2, S3, IAM), Git, GitHub Actions, Linux CLI</td>
+              <td>Amazon Web Services</td>
+            </tr>
+            <tr>
+              <td>Frontend &amp; UI</td>
+              <td>React, HTML5, CSS3, Tailwind CSS</td>
+              <td>Browser DOM, Vite</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="resume-section">
+      <h2>Technical Experience</h2>
+
+      <article class="experience-item">
+        <div class="item-header">
+          <h3>Junior Coder (Apprentice) &mdash; Amazon Web Services (AWS)</h3>
+          <span class="timeline">Oct 2020 &ndash; Sep 2023 | New York, NY</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Contributed to the development, testing, and deployment of cloud-based internal applications on AWS to streamline operations.</li>
+          <li>Partnered with Solutions Architects and Technical Account Managers within Global Financial Services to prototype customer-facing technical solutions.</li>
+          <li>Restructured and migrated legacy internal team wikis and technical documentation repositories, significantly increasing system searchability across regional teams.</li>
+          <li>Completed rigorous technical curriculum spanning cloud infrastructure (AWS), Python development, and enterprise client engagement practices.</li>
+        </ul>
+      </article>
+
+      <article class="experience-item">
+        <div class="item-header">
+          <h3>Web Developer Intern &mdash; Jupiter Leo Productions LLC</h3>
+          <span class="timeline">Jul 2025 &ndash; Aug 2025 | Remote</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed interactive web modules and financial education tools using JavaScript, HTML5, and Tailwind CSS to improve UI responsiveness across viewports.</li>
+          <li>Collaborated in daily agile stand-ups and pair-programming sessions with engineers and designers to scope, build, and deploy new user-facing features.</li>
+          <li>Integrated dynamic digital learning components and multimedia assets within an enterprise CMS, standardizing content delivery and site accessibility.</li>
+          <li>Designed and refined front-end interfaces to ensure high performance and cross-browser consistency.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Technical Projects -->
+    <section id="projects" class="resume-section">
+      <h2>Engineering Projects</h2>
+
+      <article class="project-item">
+        <div class="item-header">
+          <h3>Beatdle &mdash; Real-Time Multiplayer Music Platform</h3>
+          <span class="tech-stack">TypeScript, Node.js, Socket.IO, PostgreSQL, React</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Architected a real-time multiplayer music guessing platform featuring synchronized bi-directional audio playback and low-latency round timers.</li>
+          <li>Implemented WebSocket event handlers with Socket.IO to manage room lifecycle, concurrent user lobbies, and live score recalculation.</li>
+          <li>Engineered a normalized PostgreSQL database schema to persist match statistics, leaderboards, and song metadata.</li>
+        </ul>
+      </article>
+
+      <article class="project-item">
+        <div class="item-header">
+          <h3>CodePath AI 201 &mdash; Autonomous Agent &amp; Safety Pipeline</h3>
+          <span class="tech-stack">Python, FastAPI, OpenAI API, LangChain</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Constructed an autonomous research agent utilizing structured function calling and iterative prompt chaining to synthesize multi-source data.</li>
+          <li>Built automated evaluation pipelines checking for factual drift, hallucinations, and safety guardrail compliance.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="resume-section">
+      <h2>Education</h2>
+      <article class="education-item">
+        <div class="item-header">
+          <h3>Hunter College, City University of New York</h3>
+          <span class="timeline">Expected Dec 2027</span>
+        </div>
+        <p class="degree-info">Bachelor of Arts in Computer Science &bull; Minor / Certificate in Business Studies</p>
+        <p class="honors-info">Dean's List &bull; APIA Scholar</p>
+      </article>
+      <article class="education-item">
+        <div class="item-header">
+          <h3>Brooklyn Technical High School</h3>
+          <span class="timeline">Graduated June 2022</span>
+        </div>
+        <p class="degree-info">Major: Communication and Media Studies &bull; Honor Roll</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer id="site-footer">
+    <p>&copy; 2026 Nanzib Chowdhury. Hosted on GitHub Pages via <code>Nanzib.github.io</code>.</p>
+  </footer>
+
+</body>
+</html>
