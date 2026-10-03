@@ -87,27 +87,52 @@ h1 {
 }
 
 /* Navigation */
-nav {
-  margin: 1.2rem auto 2rem auto;
+.top-nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 
-nav ul {
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #111827;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
   display: flex;
   list-style: none;
-  gap: 1.25rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-nav a {
+.nav-links a {
   text-decoration: none;
-  color: #374151;
+  color: #4b5563;
   font-weight: 500;
   font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #2563eb;
+  background-color: #eff6ff;
 }
 
 /* Section Styling */
@@ -191,6 +216,70 @@ tbody tr:last-child td {
   color: #374151;
 }
 
+main, #site-header, #site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background-color: #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.4rem;
+}
+
+.card-desc {
+  font-size: 0.85rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  flex-grow: 1;
+}
+
+.card-tech {
+  font-size: 0.75rem;
+  color: #2563eb;
+  font-weight: 500;
+}
+
 /* Education Details */
 .degree-info {
   font-size: 0.95rem;
@@ -221,18 +310,70 @@ tbody tr:last-child td {
 }
 
 /* Responsive adjustments */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  body {
+    padding: 1rem 0.75rem;
+  }
+
+  #candidate-name {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+  }
+
   .header-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
   }
-  
+
+ .top-nav {
+    position: static;
+    padding: 0.5rem 0;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .nav-logo {
+    font-size: 1.05rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.1rem;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0;
+    font-size: 0.85rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    gap: 1rem;
+  }
+
   .item-header {
     flex-direction: column;
-  }
-  
-  nav ul {
-    flex-wrap: wrap;
-    gap: 0.75rem;
+    align-items: flex-start;
+    gap: 0.15rem;
   }
 }
